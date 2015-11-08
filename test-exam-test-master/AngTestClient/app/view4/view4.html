@@ -1,0 +1,26 @@
+<div class="view4Container" data-ng-controller="myUserInformationCtrl as adminCtrl">
+    <div class="infoBoxTopView4">
+        <p class="headerAdmin">Administration Page</p>
+    </div>
+    <div class="userAccordion">
+        <uib-accordion class="accordionThingy col-md-12" close-others="oneAtATime"  ng-repeat="user in adminCtrl.userData">
+            <div class="col-md-3"></div>
+            <uib-accordion-group class="accordionGroup col-md-6" heading="{{user.userName}}">
+                <div class="accordionInformation">
+                    <form ng-submit="">
+                        <button class="deleteButton" id="{{user.userName}}" type="submit" ng-click="adminCtrl.userDelete(user.userName)">Delete</button>
+                    </form>
+                </div>
+            </uib-accordion-group>
+            <div class="col-md-3"></div>
+        </uib-accordion>
+    </div>
+</div>
+<a href="#/view2">
+    <div class="rightButtonBack">
+        <div class="backPTag">
+            <p>Back</p>
+        </div>
+    </div>
+</a>
+<img class="companyLogoView4" src="img/logo CA3 graphic.png" alt="" style="position: fixed;"/>

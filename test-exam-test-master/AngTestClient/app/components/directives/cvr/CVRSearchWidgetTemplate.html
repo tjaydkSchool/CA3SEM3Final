@@ -1,0 +1,49 @@
+<div data-ng-controller="myCVRSearchWidgetController as cvrCtrl" class="widgetContainer">
+    <div class="infoBoxTopView3">
+        <p class="headerCompany">Company Search</p>
+    </div>
+
+    <form data-ng-submit="cvrCtrl.searchFunction()" class ="cvrSearchForm col-md-12">
+
+        <div class="col-md-3"></div>
+        <input class="inputfield col-md-3" type="text" data-ng-model="cvrCtrl.searchCvr"/>
+        <select  class="col-md-1" data-ng-model="cvrCtrl.searchType" data-ng-options="object.name for object in cvrCtrl.searchTypes">
+            <option value="">Vælg</option>
+
+        </select>
+
+        <select class="col-md-1" data-ng-model="cvrCtrl.searchContry">
+            <option value="">Vælg</option>
+            <option data-ng-repeat="types in cvrCtrl.searchContries">{{types}}</option>
+        </select>
+
+        <input class = "searchButton col-md-1" type="submit" value="Søg" />
+        <div class="col-md-3"></div>
+
+    </form>
+
+    <uib-accordion class="accordionThingy col-md-12" close-others="oneAtATime"  ng-repeat="pno in cvrCtrl.cvrData.productionunits">
+        <div class="col-md-3"></div>
+        <uib-accordion-group class="accordionGroup col-md-6" heading="{{pno.name}} {{pno.address}}">
+            <div class="accordionInformation">
+                <p>CVR {{pno.pno}}</p>
+                <p>Address {{pno.address}}</p>
+                <p>City {{pno.city}}</p>
+                <p>Zipcode {{pno.zipcode}}</p>
+                <p>Phone {{pno.phone}}</p>
+                <p>Email {{pno.email}}</p>
+            </div>
+        </uib-accordion-group>
+        <div class="col-md-3"></div>
+    </uib-accordion>
+
+    <a href="#/view2">
+        <div class="rightButtonBack">
+            <div class="backPTag">
+                <p>Back</p>
+            </div>
+        </div>
+    </a>
+</div>
+
+<img class="companyLogoView3" src="img/logo CA3 graphic.png" alt="" style="position: fixed;"/>

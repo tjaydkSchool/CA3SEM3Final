@@ -1,0 +1,112 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{ 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.currencyInputDiv{
+    width: 100%;
+    margin-top: 20%;
+    display: inline-block;
+    color: #269abc;
+}
+
+.numberInput{
+    height: 80px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+    border: solid 2px #269abc;
+    text-align: center;
+}
+
+.currencySelect{
+    height: 80px;
+    background-color: transparent;
+    color: #269abc;
+    font-weight: 700;
+    font-size: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0px;
+    border: solid 2px #269abc;
+    text-align: center;
+}
+
+.currencyButton{
+    margin-left:42%;
+    margin-top: 50px;
+    height: 80px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+    border: solid 2px #269abc;
+    transition: 0.4s all ease;
+    text-align: center;
+}
+
+.currencyButton:hover{
+    background-color: #269abc;
+    color: black;
+}
+
+.currencyResult{
+    margin-top: 50px;
+    height: 80px;
+    width:100%;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rightButtonBack{
+    position: fixed;
+    width: 100px;
+    height: 120px;
+    right: -70px;
+    top: 0px;
+    background-color: #269abc;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 4px solid #269abc;
+    border-bottom: 0;
+    transition: 0.4s all ease;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.rightButtonBack:hover{
+    right:-20px;
+}
+
+.backPTag{
+    margin-top: 35px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.infoBoxTopView5{
+    position: fixed;
+    top: 20px;
+    left: 35px;
+    color: #cccccc;
+    font-size: 40px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.companyLogoView5{
+    width: 150px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+
+
+

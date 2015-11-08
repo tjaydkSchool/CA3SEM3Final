@@ -1,0 +1,118 @@
+.cvrSearchForm{
+    margin-top: 20%;
+    text-align: center;
+}
+
+.cvrSearchForm select{
+    height: 80px;
+    background-color: transparent;
+    color: #269abc;
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0px;
+    border: solid 2px #269abc;
+    border-right: none;
+}
+
+.cvrSearchForm input{
+    height: 80px;
+    background-color: transparent;
+    color: #269abc;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.searchButton{
+    border: solid 2px #269abc;
+    font-size: 30px;
+    transition: 0.4s all ease;
+}
+
+.searchButton:hover{
+    background-color: #269abc;
+    color: black;
+}
+
+.inputfield{
+    border: solid 2px #269abc;
+    border-right: none;
+    font-size: 50px;
+}
+
+.infoBoxTopView3{
+    position: fixed;
+    top: 20px;
+    left: 35px;
+    color: #cccccc;
+    font-size: 40px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.companyLogoView3{
+    width: 150px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.accordionThingy{
+    width: 100%;
+}
+
+.accordionGroup{
+    font-size: 25px;
+    color: #269abc;
+    background-color: transparent;
+    font-weight: 500 !important;
+    border-radius: 0px !important;
+    border-color: #269abc;
+}
+
+h4.panel-title{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+div.panel-heading{
+    width: 104% !important;
+    margin-left: -2%;
+    background-color: #269abc !important;
+    border: none !important;
+}
+
+div.panel-body{
+    border-top: none !important;
+    font-weight: 800;
+}
+
+.rightButtonBack{
+    position: fixed;
+    width: 100px;
+    height: 120px;
+    right: -70px;
+    margin-top: 19%;
+    background-color: #269abc;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 4px solid #269abc;
+    border-bottom: 0;
+    transition: 0.4s all ease;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.rightButtonBack:hover{
+    right:-20px;
+}
+
+.backPTag{
+    margin-top: 35px;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 900;
+}

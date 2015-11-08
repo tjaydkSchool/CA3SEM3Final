@@ -1,0 +1,26 @@
+
+<div data-ng-controller="myCurrencyWidgetController as curCtrl">
+    <div class="infoBoxTopView5">
+        <p class="headerCurrency">Exchange Rates</p>
+    </div>
+    <div class="currencyInputDiv col-md-12">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <input class="numberInput col-md-4" type="number" data-ng-model="curCtrl.amount" placeholder="Amount"/>
+        <select  class="currencySelect col-md-4" data-ng-model="curCtrl.fromCur" data-ng-options="object.description for object in curCtrl.currencies"><option value="">From</option></select>
+        <select  class="currencySelect col-md-4" data-ng-model="curCtrl.toCur" data-ng-options="object.description for object in curCtrl.currencies"><option value="">To</option></select>
+        <input class="currencyButton" value="Calculate" type="button" data-ng-click="curCtrl.calculate(curCtrl.amount, curCtrl.toCur.rate, curCtrl.fromCur.rate)">
+        <p class="currencyResult" data-ng-bind="curCtrl.result"></p>
+    </div>
+    <div class="col-md-3"></div>
+    <a href="#/view2">
+        <div class="rightButtonBack">
+            <div class="backPTag">
+                <p>Back</p>
+            </div>
+        </div>
+    </a>
+    </div>
+</div>
+
+<img class="companyLogoView5" src="img/logo CA3 graphic.png" alt="" style="position: fixed;"/>
